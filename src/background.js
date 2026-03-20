@@ -99,23 +99,12 @@ const mql = window.matchMedia("(prefers-color-scheme: dark)");
 
 mql.addEventListener("change", (e) => applyTheme(e.matches));
 
-let lastIsDark = mql.matches;
-applyTheme(lastIsDark);
+applyTheme(mql.matches);
 
-// Polling fallback: matchMedia change events may not fire reliably
-// in Thunderbird extension background pages (Bug 1741009)
-setInterval(() => {
-  const isDark = mql.matches;
-  if (isDark !== lastIsDark) {
-    lastIsDark = isDark;
-    applyTheme(isDark);
-  }
-}, 2000);
+messenger.scripting.messageDisplay.registerScripts([
+  { id: "everforest-message-display", css: ["content.css"] },
+]);
 
-messenger.messageDisplayScripts.register({
-  css: [{ file: "content.css" }],
-});
-
-messenger.composeScripts.register({
-  css: [{ file: "content.css" }],
-});
+messenger.scripting.compose.registerScripts([
+  { id: "everforest-compose", css: ["content.css"] },
+]);
