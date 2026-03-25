@@ -17,16 +17,18 @@ A green-based theme for Thunderbird, designed to stay warm and readable during l
 
 ### From Thunderbird Add-ons
 
-1. Open **Add-ons Manager** (`Ctrl+Shift+A` / `Cmd+Shift+A`)
-2. Search for **Everforest Night**
-3. Click **Install**
+Installation:
+
+- Open **Add-ons Manager** (Tools -> Add-ons and Themes)
+- Search for `Everforest Night`
+- Click "Add to Thunderbird"
 
 ### Manual
 
-1. Download the latest `.xpi` from [Releases](https://github.com/jarith/everforest-night-thunderbird/releases)
-2. In Thunderbird, open **Add-ons Manager** (`Ctrl+Shift+A` / `Cmd+Shift+A`)
-3. Click the gear icon > **Install Add-on From File...**
-4. Select the downloaded `.xpi` file
+- Download the latest `.xpi` from [Releases](https://github.com/jarith/everforest-night-thunderbird/releases)
+- Open **Add-ons Manager** (Tools -> Add-ons and Themes)
+- Click the gear icon > **Install Add-on From File...**
+- Select the downloaded `.xpi` file
 
 ## Color Palette
 
