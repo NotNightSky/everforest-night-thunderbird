@@ -13,7 +13,7 @@
     "gecko": {
       "id": "everforest-night@jarith",
       "strict_min_version": "128.0",
-      "strict_max_version": "148.*"
+      "strict_max_version": "153.0"
     }
   },
   "icons": {
